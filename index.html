@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио Бренд-дизайнера | Яндекс СТМ (Junion & Pragma)</title>
+  <meta name="description" content="Портфолио бренд-дизайнера и моушн-дизайнера. Кейсы для собственных торговых марок Яндекс Маркета: Junion и Pragma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Yantramanav:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="yandex-dot"></span>
+        <span class="brand-title">Бренд-дизайн</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#cases" class="nav-link active">Кейсы СТМ</a>
+        <a href="#about" class="nav-link">О себе & Навыки</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" id="btn-contact-top" onclick="scrollToSection('contacts')">
+          Связаться
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Создаю <span class="text-highlight">визуальные истории</span> и бренд-системы для e-commerce
+        </h1>
+        <p class="hero-subtitle">
+          Презентация кейсов для собственных торговых марок Яндекс Маркета: детские светильники <strong class="text-white">Junion</strong> и интерьерная керамика <strong class="text-white">Pragma</strong>. Моушн-дизайн, инфографика и визуальная идентичность продуктов.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">2 СТМ</span>
+            <span class="stat-desc">Бренда Яндекса в кейсах</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3D & Motion</span>
+            <span class="stat-desc">Анимация в After Effects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-desc">Готовность к тестовому</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#cases" class="btn btn-accent btn-lg">
+            <span>Смотреть кейсы</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M12 6v12"/></svg>
+          </a>
+          <a href="assets/resume.pdf" download="Резюме_Бренд_дизайнер.pdf" target="_blank" class="btn btn-outline btn-lg">
+            <span>Скачать резюме</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Filter for Cases -->
+    <section class="cases-section" id="cases">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Проекты для Яндекса</div>
+          <h2 class="section-title">Презентации брендов СТМ</h2>
+          <p class="section-desc">Глубокая проработка визуального языка, карточек товаров, характеристик и видео-презентаций</p>
+        </div>
+
+        <!-- Case 1: JUNION -->
+        <article class="case-card" id="case-junion">
+          <div class="case-header">
+            <h3 class="case-title">Детские светильники и ночники Junion</h3>
+            <p class="case-intro">
+              Визуальная коммуникация и карточки товаров для категории «Детская спальня». Разработка уютного, безопасного и премиального графического стиля, передающего заботу, мягкий свет и уют домашней обстановки.
+            </p>
+            <div class="case-tags">
+              <span class="tag tag-motion">🎬 Motion Design</span>
+              <span class="tag">After Effects</span>
+              <span class="tag">Бренд-дизайн</span>
+              <span class="tag">E-Commerce карточки</span>
+              <span class="tag">Детские товары</span>
+            </div>
+          </div>
+
+          <!-- Video Showcase for Junion / Nightlight -->
+          <div class="video-showcase">
+            <div class="video-header">
+              <div class="video-badge">
+                <span class="pulse-dot"></span>
+                <span>Моушн-презентация ночника в After Effects</span>
+              </div>
+              <span class="video-hint">Демонстрация работы света, режимов и анимации</span>
+            </div>
+            <div class="video-wrapper">
+              <video id="junion-video" controls preload="metadata" poster="assets/junion/Frame 9.png">
+                <source src="assets/junion/JUNION_1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+              </video>
+            </div>
+          </div>
+
+          <!-- Gallery Grid JUNION -->
+          <div class="gallery-wrapper">
+            <div class="gallery-header-info">
+              <span class="gallery-label">Галерея презентации (нажмите на изображение для просмотра во весь экран):</span>
+            </div>
+            <div class="gallery-grid grid-5">
+              <div class="gallery-item" onclick="openLightbox('junion', 0)">
+                <img src="assets/junion/Frame 9.png" alt="Junion Frame 9" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 1</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('junion', 1)">
+                <img src="assets/junion/Frame 10.png" alt="Junion Frame 10" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 2</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('junion', 2)">
+                <img src="assets/junion/Frame 11.png" alt="Junion Frame 11" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 3</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('junion', 3)">
+                <img src="assets/junion/Frame 12.png" alt="Junion Frame 12" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 4</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('junion', 4)">
+                <img src="assets/junion/Frame 13.png" alt="Junion Frame 13" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-details-grid">
+            <div class="detail-box">
+              <h4>🎯 Задача</h4>
+              <p>Создать информативную и эмоционально привлекательную презентацию линейки детских светильников для маркетплейса Яндекс Маркет, подчеркивающую безопасность, эргономику и уют.</p>
+            </div>
+            <div class="detail-box">
+              <h4>💡 Визуальное решение</h4>
+              <p>Теплая цветовая палитра, четкая акцентная типографика, понятные иконки с техническими параметрами (автоотключение, режимы яркости, безопасные материалы).</p>
+            </div>
+            <div class="detail-box">
+              <h4>📈 Результат</h4>
+              <p>Готовая система слайдов, выделяющая бренд Junion среди конкурентов и соответствующая высоким стандартам визуального стиля Яндекса.</p>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Case 2: PRAGMA -->
+        <article class="case-card" id="case-pragma">
+          <div class="case-header">
+            <h3 class="case-title">Интерьерная коллекция Pragma: Wavy Peach Vase</h3>
+            <p class="case-intro">
+              Комплексный кейс для линейки керамических ваз Pragma. Включает графическую презентацию характеристик и динамический моушн-ролик, созданный в After Effects.
+            </p>
+            <div class="case-tags">
+              <span class="tag tag-motion">🎬 Motion Design</span>
+              <span class="tag">After Effects</span>
+              <span class="tag">Бренд-айдентика</span>
+              <span class="tag">Товары для дома</span>
+              <span class="tag">E-Commerce</span>
+            </div>
+          </div>
+
+          <!-- Video Showcase -->
+          <div class="video-showcase">
+            <div class="video-header">
+              <div class="video-badge">
+                <span class="pulse-dot"></span>
+                <span>Моушн-презентация в After Effects</span>
+              </div>
+            </div>
+            <div class="video-wrapper">
+              <video id="pragma-video" controls preload="metadata" poster="assets/pragma/Frame 2.png">
+                <source src="assets/pragma/PRAGMA.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+              </video>
+            </div>
+          </div>
+
+          <!-- Gallery Grid PRAGMA -->
+          <div class="gallery-wrapper">
+            <div class="gallery-header-info">
+              <span class="gallery-label">Графические макеты коллекции (нажмите для полноэкранного просмотра):</span>
+            </div>
+            <div class="gallery-grid grid-4">
+              <div class="gallery-item" onclick="openLightbox('pragma', 0)">
+                <img src="assets/pragma/Frame 2.png" alt="Pragma Frame 2" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 1</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('pragma', 1)">
+                <img src="assets/pragma/Frame 3.png" alt="Pragma Frame 3" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 2</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('pragma', 2)">
+                <img src="assets/pragma/Frame 7.png" alt="Pragma Frame 7" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 3</span>
+                </div>
+              </div>
+              <div class="gallery-item" onclick="openLightbox('pragma', 3)">
+                <img src="assets/pragma/Frame 8.png" alt="Pragma Frame 8" loading="lazy">
+                <div class="item-overlay">
+                  <span class="overlay-icon">🔍</span>
+                  <span class="overlay-title">Карточка 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-details-grid">
+            <div class="detail-box">
+              <h4>🎯 Задача</h4>
+              <p>Презентовать предмет декора премиум-сегмента (ваза Wavy Peach), подчеркнув 100% натуральную керамику, ручную роспись пастельной эмалью и точность размеров.</p>
+            </div>
+            <div class="detail-box">
+              <h4>🎬 Моушн & Графика</h4>
+              <p>Создание динамичных плашек, кинематографичных переходов, акцентных указателей и титров в After Effects для использования в промо-роликах и карточках.</p>
+            </div>
+            <div class="detail-box">
+              <h4>✨ Стиль Pragma</h4>
+              <p>Лаконичный эстетичный минимализм, сдержанная палитра, подчеркивающая фактуру керамики и органично вписывающаяся в стиль Яндекса.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- About & Skills Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-main">
+            <div class="section-tag">Обо мне</div>
+            <h2 class="section-title">Почему мой опыт подходит команде Яндекса</h2>
+            <p class="about-text">
+              Я специализируюсь на создании сильной визуальной коммуникации, бренд-систем и промо-материалов для цифровых продуктов и e-commerce. Глубоко понимаю специфику работы с СТМ (собственными торговыми марками) и умею упаковывать сложные смыслы в простые, эстетичные и продающие формы.
+            </p>
+
+            <div class="competencies-list">
+              <div class="comp-item">
+                <div class="comp-icon">🎨</div>
+                <div>
+                  <h5>Бренд-дизайн & Айдентика</h5>
+                  <p>Разработка гайдлайнов, правил верстки, работы с типографикой и цветом в рамке правил бренда.</p>
+                </div>
+              </div>
+              <div class="comp-item">
+                <div class="comp-icon">⚡</div>
+                <div>
+                  <h5>Motion Graphics & Animation</h5>
+                  <p>Уверенное владение After Effects: анимированные титры, промо-ролики товаров, микро-взаимодействия.</p>
+                </div>
+              </div>
+              <div class="comp-item">
+                <div class="comp-icon">🛍️</div>
+                <div>
+                  <h5>E-Commerce & Инфографика</h5>
+                  <p>Проектирование высококонверсионных карточек товаров для маркетплейсов с акцентом на пользе для покупателя.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3 class="skills-title">Профессиональный стек</h3>
+            
+            <div class="skill-group">
+              <span class="skill-label">Инструменты</span>
+              <div class="skill-tags">
+                <span class="sk-tag highlight">Figma</span>
+                <span class="sk-tag highlight">After Effects</span>
+                <span class="sk-tag highlight">Photoshop</span>
+                <span class="sk-tag">Illustrator</span>
+                <span class="sk-tag">Cinema 4D / Blender</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-label">Навыки</span>
+              <div class="skill-tags">
+                <span class="sk-tag">Бренд-системы</span>
+                <span class="sk-tag">Моушн-дизайн</span>
+                <span class="sk-tag">Инфографика СТМ</span>
+                <span class="sk-tag">3D Визуализация</span>
+                <span class="sk-tag">Рекламные креативы</span>
+                <span class="sk-tag">Верстка макетов</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-label">Готовность</span>
+              <p class="readiness-text">
+                ✓ Выполнение тестового задания в течение 24–48 часов<br>
+                ✓ Работа по гайдлайнам Яндекса<br>
+                ✓ Полная занятость / Гибрид / Удаленка
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contacts & Resume Section -->
+    <section class="contacts-section" id="contacts">
+      <div class="container">
+        <div class="contacts-card">
+          <div class="contacts-header">
+            <div class="section-tag">Контакты</div>
+            <h2 class="contacts-title">Готов обсудить задачи бренд-дизайна в Яндекс</h2>
+            <p class="contacts-subtitle">Открыт к предложениям, тестовым заданиям и собеседованиям</p>
+          </div>
+
+          <div class="contacts-grid">
+            <div class="contact-box">
+              <span class="contact-icon">💬</span>
+              <div class="contact-info">
+                <span class="contact-label">Telegram</span>
+                <a href="https://t.me/davai_poreshaem" target="_blank" class="contact-val" id="tg-handle">@davai_poreshaem</a>
+              </div>
+              <button class="btn-copy" onclick="copyText('@davai_poreshaem', 'Telegram handle скопирован!')" title="Копировать">
+                📋
+              </button>
+            </div>
+
+            <div class="contact-box">
+              <span class="contact-icon">✉️</span>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <a href="mailto:ponom.design@yandex.ru" class="contact-val" id="email-handle">ponom.design@yandex.ru</a>
+              </div>
+              <button class="btn-copy" onclick="copyText('ponom.design@yandex.ru', 'Email скопирован!')" title="Копировать">
+                📋
+              </button>
+            </div>
+
+            <div class="contact-box">
+              <span class="contact-icon">📞</span>
+              <div class="contact-info">
+                <span class="contact-label">Телефон</span>
+                <a href="tel:+79160410219" class="contact-val" id="phone-handle">+7 (916) 041-02-19</a>
+              </div>
+              <button class="btn-copy" onclick="copyText('+7 (916) 041-02-19', 'Телефон скопирован!')" title="Копировать">
+                📋
+              </button>
+            </div>
+          </div>
+
+          <div class="resume-cta-box">
+            <div class="resume-info">
+              <h4>📄 Резюме бренд-дизайнера</h4>
+              <p>Формат PDF, содержит подробный опыт, стек и ссылки на проекты</p>
+            </div>
+            <a href="assets/resume.pdf" download="Резюме_Бренд_дизайнер.pdf" target="_blank" class="btn btn-accent btn-lg">
+              <span>Скачать Резюме (PDF)</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="yandex-dot"></span>
+        <span>Портфолио бренд-дизайнера для Яндекс</span>
+      </div>
+      <div class="footer-right">
+        <span>Кейсы Junion & Pragma • 2026</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Закрыть">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">&lsaquo;</button>
+    <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">&rsaquo;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Fullscreen view" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <span class="toast-message" id="toast-message">Сообщение скопировано</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
