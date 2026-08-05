@@ -1004,7 +1004,31 @@ body {
   opacity: 1;
 }
 
-/* Responsive Styles */
+.cake-img-wrapper {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.cake-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.cake-ui-kit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.cake-section {
+  margin-bottom: 60px;
+}
 @media (max-width: 992px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -1033,4 +1057,50 @@ body {
   .contact-box {
     padding: 16px 20px;
   }
+}
+
+/* Case Preview Cards */
+.case-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.case-preview-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.case-preview-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-hover);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.case-preview-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.case-preview-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.case-preview-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  flex-grow: 1;
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyom Nyom — E-commerce & UI Kit | Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .case-case-container { max-width: 900px; margin: 0 auto; }
+    .cake-section { margin-bottom: 60px; }
+    .gallery-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 20px; }
+    .gallery-item { cursor: pointer; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); }
+    .gallery-item img { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
+    .gallery-item:hover img { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span class="brand-title">Бренд-дизайн</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#cases" class="nav-link">Кейсы</a>
+        <a href="index.html#about" class="nav-link">О себе & Навыки</a>
+        <a href="index.html#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('contacts')">Связаться</button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px; padding-bottom: 120px;">
+    <div class="container case-case-container">
+      <a href="index.html#cases" class="btn btn-outline btn-sm" style="margin-bottom: 30px;">← На главную</a>
+      
+      <article class="case-card">
+        <div class="case-header">
+          <span class="section-tag">UI/UX & E-commerce</span>
+          <h1 class="case-title">Nyom Nyom: Кондитерская</h1>
+          <p class="case-intro">
+            Разработка концепта и дизайн-системы для сайта домашней кондитерской. Проектирование понятной структуры каталога, создание компонентной базы (UI Kit) и адаптивная верстка макетов.
+          </p>
+          <div class="case-tags">
+            <span class="tag tag-highlight">UI/UX</span>
+            <span class="tag">E-commerce</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="video-showcase">
+          <div class="video-header">
+            <div class="video-badge">
+              <span class="pulse-dot"></span>
+              <span>Концепт сайта (Обложка)</span>
+            </div>
+          </div>
+          <div class="video-wrapper">
+             <img src="assets/сakes/cover2.png" alt="Nyom Nyom Cover" style="width: 100%; object-fit: contain; object-position: center;">
+          </div>
+        </div>
+
+        <div class="gallery-wrapper">
+          <div class="gallery-header-info">
+            <span class="gallery-label">Сетка, UI Kit и Дизайн:</span>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox('cakes', 0)">
+              <img src="assets/сakes/wireframe-grid.png" alt="Сетка" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('cakes', 1)">
+              <img src="assets/сakes/colors.png" alt="Цвета" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('cakes', 2)">
+              <img src="assets/сakes/typography.png" alt="Типографика" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('cakes', 3)">
+              <img src="assets/сakes/full-site-1920.png" alt="Финальный макет" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  
+  <div class="lightbox-modal" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">&lsaquo;</button>
+    <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">&rsaquo;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Fullscreen view" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script>
+    // Добавим данные для лайтбокса
+    galleries.cakes = [
+        { src: 'assets/сakes/wireframe-grid.png', caption: 'Сетка' },
+        { src: 'assets/сakes/colors.png', caption: 'Цветовая палитра' },
+        { src: 'assets/сakes/typography.png', caption: 'Типографика' },
+        { src: 'assets/сakes/full-site-1920.png', caption: 'Финальный макет' }
+    ];
+  </script>
+</body>
+</html>

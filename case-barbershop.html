@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbershop — Motion & Infographics | Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .case-case-container { max-width: 900px; margin: 0 auto; }
+    .video-showcase { margin-bottom: 40px; }
+  </style>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span class="brand-title">Бренд-дизайн</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#cases" class="nav-link">Кейсы</a>
+        <a href="index.html#about" class="nav-link">О себе & Навыки</a>
+        <a href="index.html#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('contacts')">Связаться</button>
+      </div>
+    </div>
+  </header>
+  <main style="padding-top: 120px; padding-bottom: 120px;">
+    <div class="container case-case-container">
+      <a href="index.html#cases" class="btn btn-outline btn-sm" style="margin-bottom: 30px;">← На главную</a>
+      
+      <article class="case-card">
+        <div class="case-header">
+          <span class="section-tag">Motion Design & Инфографика</span>
+          <h1 class="case-title">Barbershop In-Store: Презентация стрижек</h1>
+          <p class="case-intro">
+            Проект: Создание динамического видеоконтента для презентации актуальных трендов и мастеров на ресепшене барбершопа. Ролик помогает клиенту сориентироваться в трендах во время ожидания и выбрать своего мастера.
+          </p>
+          <div class="case-tags">
+            <span class="tag tag-highlight">After Effects</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Illustrator</span>
+          </div>
+        </div>
+
+        <div class="video-showcase">
+          <div class="video-header">
+            <div class="video-badge">
+              <span class="pulse-dot"></span>
+              <span>Презентационный моушн-ролик</span>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <video id="barbershop-video" controls preload="metadata">
+              <source src="assets/barbershop/LOGO.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+
+        <div class="case-details-grid">
+          <div class="detail-box">
+            <h4>🛠 Что было сделано</h4>
+            <p>Анимация логотипа (с нуля), проектирование понятной инфографики для презентации стрижек, сборка ролика, настройка ритмики и переходов.</p>
+          </div>
+          <div class="detail-box">
+            <h4>✨ Задача</h4>
+            <p>Создать динамический контент, который презентует тренды и мастеров, делая ожидание в барбершопе информативным и комфортным.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

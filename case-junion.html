@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junion — E-commerce & Motion | Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .case-case-container { max-width: 900px; margin: 0 auto; }
+    .video-showcase { margin-bottom: 40px; }
+    .gallery-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  </style>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span class="brand-title">Бренд-дизайн</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#cases" class="nav-link">Кейсы</a>
+        <a href="index.html#about" class="nav-link">О себе & Навыки</a>
+        <a href="index.html#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('contacts')">Связаться</button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 120px; padding-bottom: 120px;">
+    <div class="container case-case-container">
+      <a href="index.html#cases" class="btn btn-outline btn-sm" style="margin-bottom: 30px;">← На главную</a>
+      
+      <article class="case-card">
+        <div class="case-header">
+          <span class="section-tag">E-com Motion & Инфографика</span>
+          <h1 class="case-title">Smart Home & Tech: Детский ночник-монитор</h1>
+          <p class="case-intro">
+            Разработка продуктовой инфографики и 2D-анимации для гаджетов умного дома. Работа с сеткой, подсвечивание УТП товара, акцентные плашки, настройка масок и света в After Effects.
+          </p>
+          <div class="case-tags">
+            <span class="tag tag-highlight">After Effects</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Photoshop Firefly</span>
+          </div>
+        </div>
+
+        <div class="video-showcase">
+          <div class="video-header">
+            <div class="video-badge">
+              <span class="pulse-dot"></span>
+              <span>Моушн-презентация ночника в After Effects</span>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <video id="junion-video" controls preload="metadata" poster="assets/junion/Frame 9.png">
+              <source src="assets/junion/JUNION_1.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+
+        <div class="gallery-wrapper">
+          <div class="gallery-header-info">
+            <span class="gallery-label">Галерея презентации:</span>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox('junion', 0)">
+              <img src="assets/junion/Frame 9.png" alt="Junion Frame 9" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('junion', 1)">
+              <img src="assets/junion/Frame 10.png" alt="Junion Frame 10" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('junion', 2)">
+              <img src="assets/junion/Frame 11.png" alt="Junion Frame 11" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('junion', 3)">
+              <img src="assets/junion/Frame 12.png" alt="Junion Frame 12" loading="lazy">
+            </div>
+            <div class="gallery-item" onclick="openLightbox('junion', 4)">
+              <img src="assets/junion/Frame 13.png" alt="Junion Frame 13" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="case-details-grid">
+          <div class="detail-box">
+            <h4>🎯 Задача</h4>
+            <p>Создать информативную и эмоционально привлекательную презентацию линейки детских светильников, подчеркивающую безопасность, эргономику и уют.</p>
+          </div>
+          <div class="detail-box">
+            <h4>💡 Визуальное решение</h4>
+            <p>Теплая палитра, акцентная типографика, наглядные иконки с параметрами (автоотключение, мягкий силикон, регулировка яркости).</p>
+          </div>
+          <div class="detail-box">
+            <h4>📈 Результат</h4>
+            <p>Готовая система слайдов и динамичный анимационный ролик, формирующие премиальное восприятие продукта.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  
+  <div class="lightbox-modal" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">&lsaquo;</button>
+    <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">&rsaquo;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Fullscreen view" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
